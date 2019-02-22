@@ -1,0 +1,186 @@
+body{
+    background: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+#container{
+    width: 960px;
+    margin: 0 auto;
+}
+header{
+    padding: 50px 0 ;
+    border-bottom: 1px solid #ccc;
+}
+#logo{
+    padding-top: 20px;
+  float: left;
+    display: inline-block;
+   
+
+}
+header nav ul {
+    text-align: right;
+    
+}
+header nav ul li{
+    display: inline-block;
+    padding: 25px;
+    margin-right: -25px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+header nav ul li a#nav1{
+    color: #ccc;
+}
+header nav ul li a#nav2,#nav3{
+    color: black;
+}
+#myinfo{
+    border-bottom: 1px solid #ccc;
+}
+#myinfo h1{
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: -3px;
+    margin:100px 0 50px 0; 
+    
+}
+#myinfo p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#button{
+    
+    width: 140px;
+    height: 40px;
+    color: white;
+    background: #222222;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+#mywork{
+    margin: 0 0;
+    
+}
+#mywork h2{
+    
+    font-size: 30px;
+    margin: 50px 0;
+}
+#mywork ul{
+    
+    margin-bottom: 100px;
+    
+}
+#mywork ul li{
+    display: inline-block;
+    height: 300px;
+    width: 280px;
+    text-align: center;
+    padding: 0px;
+    border: 1px solid #ddd;
+    
+    
+}
+#mywork ul li p{
+    color: #b7b7b7
+}
+#mywork ul .work{
+    height: 200px;
+    width: 280px
+}
+
+#about{
+    background: #e5e5e5;
+    display: inline-block;
+}
+#leftabout{
+    width: 455px;
+    float: left;
+    margin-top: 50px;
+    padding-left:20px; 
+    
+}
+#leftabout h4{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+#leftabout p{
+    font-size: 15px;
+    color: #444444;
+    padding: 0 30px;
+}
+#leftabout .social{
+    
+    padding: 0 20px
+}
+#rightabout{
+    width: 475px;
+    float: right;
+    margin-top: 50px;
+}
+#rightabout h4{
+    font-size: 30px;
+    margin-bottom: 50px
+}
+#sub1{
+     border-bottom: 1px solid #ccc; 
+}
+#sub1 h5{
+    font-size: 18px;
+}
+#sub2 h5{
+    font-size: 18px;
+}
+#sub2{
+margin: 50px 0;
+}
+#sub1 .subimg1{
+    
+   float: left;
+    margin-right: 30px;
+    
+}
+#sub2 .subimg2{
+    
+   float: left;
+    margin-right: 30px;
+}
+.subimg1,.subimg2{
+    height: 100px;
+    width: 150px;
+    
+}
+.subabout p{
+    color: #444444;
+}
+.red{
+    color: #cc3737;
+    margin: 0px 10px ;
+}
+footer{
+    padding: 40px;
+    font-size: 15px;
+}
+#footleft{
+    float: left
+}
+#footright li{
+    display: inline-block; 
+    float: right;
+    padding: 0 20px;
+}
+#footright li a{
+    text-decoration: none;
+    color: black
+}
+
+footer ul #footnav1{
+    color: #999;
+}
