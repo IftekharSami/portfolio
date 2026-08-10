@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iftekhar Alam | Senior WordPress Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Iftekhar Alam, Senior WordPress Developer specializing in high-converting, fast, and SEO-optimized websites." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            background: 'oklch(0.1 0 0)',
+            foreground: 'oklch(0.98 0 0)',
+            card: 'oklch(0.12 0 0)',
+            muted: 'oklch(0.2 0 0)',
+            'muted-foreground': 'oklch(0.6 0 0)',
+            primary: 'oklch(0.98 0 0)',
+            'primary-foreground': 'oklch(0.1 0 0)',
+            border: 'oklch(0.2 0 0)',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Space Grotesk', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+<script src="/_aistudio-iframe.js?v=2f1c016a"></script></head>
+<body class="bg-[#0f0f0f] text-[#f5f5f5] font-sans antialiased selection:bg-white selection:text-black min-h-screen">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-6">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <a href="#" class="text-2xl font-bold tracking-tighter group font-heading">
+        IFTEKHAR<span class="text-white group-hover:tracking-widest transition-all">.DEV</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#about" class="text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">About</a>
+        <a href="#services" class="text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">Services</a>
+        <a href="#projects" class="text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">Projects</a>
+        <a href="#experience" class="text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">Experience</a>
+        <a href="#contact" class="text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-white transition-colors">Contact</a>
+        <a href="#contact" class="bg-white text-black hover:bg-zinc-200 font-bold px-6 py-2.5 rounded-full text-xs uppercase tracking-widest transition-all shadow-lg">
+          Let's Talk
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-white p-2 rounded-full bg-zinc-800/60 focus:outline-none">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden md:hidden bg-zinc-950/95 backdrop-blur-2xl border-b border-zinc-800 p-6 flex flex-col gap-4 mt-4">
+      <a href="#about" class="text-xl font-bold text-zinc-300 hover:text-white">About</a>
+      <a href="#services" class="text-xl font-bold text-zinc-300 hover:text-white">Services</a>
+      <a href="#projects" class="text-xl font-bold text-zinc-300 hover:text-white">Projects</a>
+      <a href="#experience" class="text-xl font-bold text-zinc-300 hover:text-white">Experience</a>
+      <a href="#contact" class="text-xl font-bold text-zinc-300 hover:text-white">Contact</a>
+      <a href="#contact" class="bg-white text-black font-bold text-center py-3 rounded-xl mt-2">Let's Talk</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+    <!-- Glowing Accent -->
+    <div class="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-white/5 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-white/5 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+      <div class="max-w-4xl">
+        <div class="flex items-center gap-3 mb-8">
+          <span class="w-12 h-[1px] bg-white"></span>
+          <span class="text-white text-xs md:text-sm font-bold tracking-[0.2em] uppercase font-heading">
+            Senior WordPress Developer
+          </span>
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-8 tracking-tighter font-heading">
+          BUILDING <span class="text-zinc-500">MODERN</span> <br />
+          WEBSITES THAT <span class="text-white italic">CONVERT</span>
+        </h1>
+        
+        <p class="text-lg md:text-2xl text-zinc-400 mb-10 max-w-2xl leading-relaxed font-light">
+          I specialize in high-performance WordPress development, turning complex business requirements into elegant, fast, and SEO-optimized digital experiences.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+          <a href="#projects" class="bg-white text-black hover:bg-zinc-200 font-bold px-8 py-4 rounded-full text-lg inline-flex items-center justify-center gap-2 transition-all shadow-xl shadow-white/10 group">
+            View My Work
+            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+          </a>
+          <a href="#contact" class="border border-zinc-700 hover:border-zinc-500 text-white font-medium px-8 py-4 rounded-full text-lg inline-flex items-center justify-center transition-all">
+            Contact Me
+          </a>
+        </div>
+
+        <!-- Metrics Bar -->
+        <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-zinc-800/80 pt-10">
+          <div class="space-y-2">
+            <div class="flex items-center gap-2 text-white font-bold text-lg">
+              <i data-lucide="globe" class="w-5 h-5"></i>
+              <span>International</span>
+            </div>
+            <p class="text-xs text-zinc-500 uppercase tracking-widest">Global Projects</p>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2 text-white font-bold text-lg">
+              <i data-lucide="zap" class="w-5 h-5"></i>
+              <span>90+ Score</span>
+            </div>
+            <p class="text-xs text-zinc-500 uppercase tracking-widest">Performance</p>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2 text-white font-bold text-lg">
+              <i data-lucide="layout" class="w-5 h-5"></i>
+              <span>Clean Design</span>
+            </div>
+            <p class="text-xs text-zinc-500 uppercase tracking-widest">Modern UI/UX</p>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2 text-white font-bold text-lg">
+              <i data-lucide="search" class="w-5 h-5"></i>
+              <span>Rank Math</span>
+            </div>
+            <p class="text-xs text-zinc-500 uppercase tracking-widest">SEO Ready</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 bg-zinc-900/40 relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Developer Profile Image -->
+        <div class="relative group">
+          <div class="absolute -inset-4 bg-white/10 rounded-[2.5rem] blur-2xl group-hover:bg-white/20 transition-all"></div>
+          <div class="relative aspect-[4/5] rounded-[2rem] overflow-hidden border border-zinc-800 shadow-2xl">
+            <img src="Iftekhar Alam.png" alt="Iftekhar Alam" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80"></div>
+            <div class="absolute bottom-8 left-8 right-8">
+              <div class="p-6 rounded-2xl bg-zinc-950/80 backdrop-blur-md border border-zinc-800 shadow-2xl">
+                <p class="text-2xl font-bold tracking-tight font-heading">Iftekhar Alam</p>
+                <p class="text-zinc-300 font-medium">Senior WordPress Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Text -->
+        <div>
+          <div class="inline-block py-1 px-3 rounded-full bg-zinc-800 text-zinc-300 text-xs font-bold tracking-widest uppercase mb-6 font-heading">
+            The Developer
+          </div>
+          <h2 class="text-4xl md:text-6xl font-bold mb-8 tracking-tighter font-heading">
+            Crafting Digital <span class="text-zinc-500 italic">Excellence</span>
+          </h2>
+          <p class="text-lg text-zinc-400 leading-relaxed mb-8">
+            I am a Senior WordPress Developer with a passion for building modern, responsive, and high-performance websites. I specialize in creating clean UI, fast-loading pages, and conversion-focused layouts that drive real business results. With years of experience working on international projects, I've helped businesses worldwide establish a powerful online presence through professional, scalable, and secure website design.
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="flex items-center gap-3 p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+              <div class="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center shrink-0">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="font-medium text-sm">Clean and modern UI/UX</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+              <div class="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center shrink-0">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="font-medium text-sm">Fast loading speed (90+)</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+              <div class="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center shrink-0">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="font-medium text-sm">SEO-friendly structure</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 rounded-xl bg-zinc-900 border border-zinc-800">
+              <div class="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center shrink-0">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-white"></i>
+              </div>
+              <span class="font-medium text-sm">Mobile responsiveness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services / What I Do -->
+  <section id="services" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 font-heading">What I Do</h2>
+        <p class="text-xl text-zinc-400">
+          I provide end-to-end WordPress solutions that focus on performance, design, and results.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="layout" class="w-6 h-6 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 font-heading">WordPress Website Design</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Custom, modern WordPress themes tailored to your brand identity and business objectives.
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="code-2" class="w-6 h-6 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 font-heading">Elementor Development</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Expert-level Elementor implementation for flexible, maintainable, and powerful page layouts.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="zap" class="w-6 h-6 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 font-heading">Speed Optimization</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Lightning-fast loading times to improve user retention, conversion rates, and Google rankings.
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="search" class="w-6 h-6 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 font-heading">SEO Setup (Rank Math)</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Comprehensive SEO configuration, sitemap setup, and schema markup to help your site rank higher.
+          </p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="rocket" class="w-6 h-6 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 font-heading">Landing Page Design</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            High-converting sales and lead capture pages designed to turn casual visitors into loyal clients.
+          </p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="p-8 rounded-3xl bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 transition-all group">
+          <div class="w-12 h-12 rounded-2xl bg-zinc-800 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="smartphone" class="w-6 h-6 text-white"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 font-heading">Website Redesign</h3>
+          <p class="text-zinc-400 text-sm leading-relaxed">
+            Transforming outdated websites into modern, sleek, high-performance web applications.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tools Badges -->
+      <div class="mt-16 text-center">
+        <p class="text-xs font-bold uppercase tracking-widest text-zinc-500 mb-6">Tools & Technologies</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="px-5 py-2.5 rounded-full bg-zinc-800 text-zinc-200 font-medium text-sm border border-zinc-700">WordPress</span>
+          <span class="px-5 py-2.5 rounded-full bg-zinc-800 text-zinc-200 font-medium text-sm border border-zinc-700">Elementor Pro</span>
+          <span class="px-5 py-2.5 rounded-full bg-zinc-800 text-zinc-200 font-medium text-sm border border-zinc-700">Rank Math SEO</span>
+          <span class="px-5 py-2.5 rounded-full bg-zinc-800 text-zinc-200 font-medium text-sm border border-zinc-700">HTML5 / CSS3 / JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-24 bg-zinc-900/30">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <div class="inline-block py-1 px-3 rounded-full bg-zinc-800 text-zinc-300 text-xs font-bold tracking-widest uppercase mb-4 font-heading">
+            Portfolio
+          </div>
+          <h2 class="text-4xl md:text-6xl font-bold tracking-tighter font-heading">
+            Selected <span class="text-zinc-500 italic">Projects</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-zinc-900 border border-zinc-800 rounded-[2rem] overflow-hidden group hover:border-zinc-700 transition-all">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="Atithiseba.png" alt="Atithi Sheba" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+              <a href="https://www.atithisheba.com" target="_blank" class="w-full bg-white text-black font-bold py-3 rounded-full text-center inline-flex items-center justify-center gap-2 text-sm">
+                Visit Site <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-400 border border-zinc-700 px-3 py-1 rounded-full">WordPress</span>
+              <span class="text-xs text-zinc-500 font-mono">2026</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-2 font-heading">Atithi Sheba</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Business website with clean layout and service-focused structure.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-zinc-900 border border-zinc-800 rounded-[2rem] overflow-hidden group hover:border-zinc-700 transition-all">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="Fecci.png" alt="FECCI" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+              <a href="https://www.fecci.eu" target="_blank" class="w-full bg-white text-black font-bold py-3 rounded-full text-center inline-flex items-center justify-center gap-2 text-sm">
+                Visit Site <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-400 border border-zinc-700 px-3 py-1 rounded-full">WordPress</span>
+              <span class="text-xs text-zinc-500 font-mono">2026</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-2 font-heading">FECCI</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Corporate website with international audience and professional UI.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-zinc-900 border border-zinc-800 rounded-[2rem] overflow-hidden group hover:border-zinc-700 transition-all">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="Arab.png" alt="Arab Growth Group" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+              <a href="https://arabgrowthgroup.com" target="_blank" class="w-full bg-white text-black font-bold py-3 rounded-full text-center inline-flex items-center justify-center gap-2 text-sm">
+                Visit Site <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-400 border border-zinc-700 px-3 py-1 rounded-full">WordPress</span>
+              <span class="text-xs text-zinc-500 font-mono">2026</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-2 font-heading">Arab Growth Group</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Strategic growth platform for businesses in the Arab world.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="bg-zinc-900 border border-zinc-800 rounded-[2rem] overflow-hidden group hover:border-zinc-700 transition-all">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="Event-setupsme.png" alt="Setup SME Event" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+              <a href="https://www.event.setupsme.com" target="_blank" class="w-full bg-white text-black font-bold py-3 rounded-full text-center inline-flex items-center justify-center gap-2 text-sm">
+                Visit Site <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-400 border border-zinc-700 px-3 py-1 rounded-full">WordPress</span>
+              <span class="text-xs text-zinc-500 font-mono">2026</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-2 font-heading">Setup SME Event</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Event management and registration platform for SME focused conferences.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="bg-zinc-900 border border-zinc-800 rounded-[2rem] overflow-hidden group hover:border-zinc-700 transition-all">
+          <div class="relative aspect-[16/10] overflow-hidden">
+            <img src="Council.png" alt="Council Startup" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+              <a href="https://www.councilstartup.com" target="_blank" class="w-full bg-white text-black font-bold py-3 rounded-full text-center inline-flex items-center justify-center gap-2 text-sm">
+                Visit Site <i data-lucide="external-link" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-zinc-400 border border-zinc-700 px-3 py-1 rounded-full">WordPress</span>
+              <span class="text-xs text-zinc-500 font-mono">2026</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-2 font-heading">Council Startup</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Startup-focused platform with conversion-oriented design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education -->
+  <section id="experience" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center font-heading">Experience & Education</h2>
+      
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Experience Column -->
+        <div class="space-y-8">
+          <h3 class="text-2xl font-bold flex items-center gap-3 mb-8 font-heading">
+            <i data-lucide="briefcase" class="w-6 h-6 text-white"></i> Experience
+          </h3>
+          <div class="relative pl-8 border-l border-zinc-800 pb-8">
+            <div class="absolute -left-[5px] top-0 w-[10px] h-[10px] rounded-full bg-white"></div>
+            <div class="bg-zinc-900/60 p-6 rounded-2xl border border-zinc-800">
+              <span class="text-xs font-bold text-white uppercase tracking-widest">Current</span>
+              <h4 class="text-xl font-bold mt-1 font-heading">Senior Developer</h4>
+              <p class="text-zinc-400 font-medium mb-3">Zovo Team</p>
+              <p class="text-zinc-400 text-sm leading-relaxed">
+                Leading WordPress development and optimization for international clients.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="space-y-8">
+          <h3 class="text-2xl font-bold flex items-center gap-3 mb-8 font-heading">
+            <i data-lucide="graduation-cap" class="w-6 h-6 text-white"></i> Education
+          </h3>
+          <div class="relative pl-8 border-l border-zinc-800 pb-8">
+            <div class="absolute -left-[5px] top-0 w-[10px] h-[10px] rounded-full bg-white"></div>
+            <div class="bg-zinc-900/60 p-6 rounded-2xl border border-zinc-800">
+              <span class="text-xs font-bold text-white uppercase tracking-widest">Completed</span>
+              <h4 class="text-xl font-bold mt-1 font-heading">MBA in Management</h4>
+              <p class="text-zinc-400 font-medium mb-3">Govt. Tolaram College</p>
+              <p class="text-zinc-400 text-sm leading-relaxed">
+                Advanced management studies focusing on business operations and digital strategy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="py-24 bg-zinc-900/40">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 font-heading">My Process</h2>
+        <p class="text-xl text-zinc-400">
+          A structured approach to ensure every project is delivered with excellence.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800">
+          <span class="text-5xl font-bold text-zinc-700 block mb-4 font-heading">01</span>
+          <h3 class="text-lg font-bold mb-2 font-heading">Requirement Discussion</h3>
+          <p class="text-zinc-400 text-xs leading-relaxed">Understanding your goals, audience, and technical specs.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800">
+          <span class="text-5xl font-bold text-zinc-700 block mb-4 font-heading">02</span>
+          <h3 class="text-lg font-bold mb-2 font-heading">Wireframe / Layout</h3>
+          <p class="text-zinc-400 text-xs leading-relaxed">Creating a blueprint for page structure and content flow.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800">
+          <span class="text-5xl font-bold text-zinc-700 block mb-4 font-heading">03</span>
+          <h3 class="text-lg font-bold mb-2 font-heading">Design & Development</h3>
+          <p class="text-zinc-400 text-xs leading-relaxed">Bringing the site to life with clean code and responsive layouts.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800">
+          <span class="text-5xl font-bold text-zinc-700 block mb-4 font-heading">04</span>
+          <h3 class="text-lg font-bold mb-2 font-heading">Review & Revisions</h3>
+          <p class="text-zinc-400 text-xs leading-relaxed">Fine-tuning every detail according to your exact feedback.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800">
+          <span class="text-5xl font-bold text-zinc-700 block mb-4 font-heading">05</span>
+          <h3 class="text-lg font-bold mb-2 font-heading">Final Delivery</h3>
+          <p class="text-zinc-400 text-xs leading-relaxed">Deploying your fast, secure, SEO-ready website to production.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-bold mb-8 font-heading">Contact Me</h2>
+          <p class="text-xl text-zinc-400 mb-12 leading-relaxed">
+            Feel free to reach out for any project or collaboration. I'm always open to discussing new ideas and opportunities.
+          </p>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-zinc-800 flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-widest text-zinc-500 mb-1">Email</p>
+                <a href="mailto:iftekharalamsami@gmail.com" class="text-xl font-bold hover:text-zinc-300 transition-colors">
+                  iftekharalamsami@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-zinc-800 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-widest text-zinc-500 mb-1">Location</p>
+                <p class="text-xl font-bold">Bangladesh</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 p-8 rounded-3xl bg-white text-black">
+            <h3 class="text-2xl font-bold mb-3 font-heading">Let's Build Something Amazing Together</h3>
+            <p class="text-zinc-700 text-sm mb-6">
+              Looking for a professional website that grows your business? Let's talk.
+            </p>
+            <a href="mailto:iftekharalamsami@gmail.com" class="inline-block bg-black text-white font-bold px-8 py-3 rounded-full text-sm">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="bg-zinc-900 p-8 md:p-10 rounded-3xl border border-zinc-800">
+          <form id="contact-form" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-widest text-zinc-400 mb-2">Name</label>
+                <input type="text" required placeholder="Your Name" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-zinc-500" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-widest text-zinc-400 mb-2">Email</label>
+                <input type="email" required placeholder="Your Email" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-zinc-500" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-widest text-zinc-400 mb-2">Subject</label>
+              <input type="text" required placeholder="Project Subject" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-zinc-500" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-widest text-zinc-400 mb-2">Message</label>
+              <textarea required rows="4" placeholder="Tell me about your project..." class="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-4 text-sm focus:outline-none focus:border-zinc-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-white text-black font-bold py-4 rounded-xl text-lg hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2">
+              Send Message <i data-lucide="send" class="w-5 h-5"></i>
+            </button>
+            <p id="form-status" class="text-sm text-emerald-400 hidden text-center font-medium mt-2">
+              ✓ Thank you! Your message has been prepared for sending.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 border-t border-zinc-800 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-2xl font-bold tracking-tighter font-heading">
+        IFTEKHAR<span class="text-zinc-500">.DEV</span>
+      </div>
+      <p class="text-sm text-zinc-500">
+        © 2026 Iftekhar Alam. Senior WordPress Developer. All rights reserved.
+      </p>
+      <div class="flex gap-6 text-sm text-zinc-400">
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#services" class="hover:text-white">Services</a>
+        <a href="#projects" class="hover:text-white">Projects</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
